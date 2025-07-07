@@ -1,7 +1,7 @@
 import { useState } from "react";
-import FindJobFilter from "../../components/talent/find-jobs/findJobFilter";
 import FindJobsSearchBar from "../../components/talent/find-jobs/FindJobsSearchBar";
 import FindJobsListing from "../../components/talent/find-jobs/FindJobsListing";
+import { FilterSidebar } from "../../components/talent/find-jobs/FindJobFilter";
 
 const jobsData = [
   {
@@ -173,7 +173,7 @@ function App() {
         <div className="flex lg:gap-8">
           {/* Sidebar */}
           <div className="flex-shrink-0">
-            <FindJobFilter
+            <FilterSidebar
               filters={filters}
               onFilterChange={handleFilterChange}
               onReset={handleReset}

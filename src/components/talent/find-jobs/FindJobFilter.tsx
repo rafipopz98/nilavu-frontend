@@ -86,7 +86,6 @@ export const FindJobFilterContent = ({
             onValueChange={(value) => onFilterChange("salaryRange", value)}
             max={5000}
             min={0}
-
             className="w-full"
           />
           <div className="flex justify-between text-xs text-muted-foreground mt-2">
@@ -149,11 +148,11 @@ export const FindJobFilterContent = ({
   );
 };
 
-export default function FilterSidebar({
+export const FilterSidebar = ({
   filters,
   onFilterChange,
   onReset,
-}: FilterSidebarProps) {
+}: FilterSidebarProps) => {
   return (
     <>
       {/* Desktop Sidebar */}
@@ -171,4 +170,4 @@ export default function FilterSidebar({
       </Card>
     </>
   );
-}
+};

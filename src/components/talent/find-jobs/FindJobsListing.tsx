@@ -15,7 +15,7 @@ import {
   SelectValue,
 } from "../../ui/select";
 import FindJobsCard from "./FindJobsCard";
-import { FindJobFilterContent } from "./findJobFilter";
+import { FindJobFilterContent } from "./FindJobFilter";
 
 interface JobListProps {
   jobs: any[];
