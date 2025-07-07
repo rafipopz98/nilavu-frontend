@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { Navigate, Route, Routes } from "react-router-dom";
 import PrivateRoute from "./layouts/PrivateAuth";
 import Login from "./pages/Auth/Login";
 import TalentDashboard from "./pages/talent/dashboard";
@@ -15,6 +15,10 @@ const App = () => {
     <div className="px-4">
       <Routes>
         {/* Public routes */}
+        <Route
+          path="*"
+          element={<Navigate to={ROUTER.AUTH.SIGN_IN} replace />}
+        />
         <Route path={ROUTER.AUTH.SIGN_IN} element={<Login />} />
         <Route path={ROUTER.AUTH.SIGN_UP} element={<SignUP />} />
         {/* Protected routes */}
