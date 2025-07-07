@@ -30,7 +30,7 @@ const Navbar = () => {
         {/* Left side (Logo + SidebarTrigger on mobile) */}
         <div className="flex items-center gap-2 sm:hidden">
           <Link to={DashboardLink}>
-            <img src="/nilavu.png" alt="logo" width={25} height={25} />
+            <img src="/logo.svg" alt="logo" width={25} height={25} className="mix-blend-exclusion dark:mix-blend-normal" />
           </Link>
           <SidebarTrigger />
         </div>

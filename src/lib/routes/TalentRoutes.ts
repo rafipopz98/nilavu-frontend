@@ -11,4 +11,5 @@ export const TALENT_ROUTES = {
   INVOICE: `${TALENT_MAIN_ROUTE}/invoice`,
   EXPENSE: `${TALENT_MAIN_ROUTE}/expense`,
   WITHDRAWAL_METHOD: `${TALENT_MAIN_ROUTE}/withdrawal-method`,
+  EMPLOYER_HISTORY: `${TALENT_MAIN_ROUTE}/employer-history`,
 };

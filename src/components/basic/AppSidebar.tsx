@@ -54,12 +54,14 @@ const AppSidebar = () => {
           {/* Logo */}
           <SidebarMenu>
             <SidebarMenuItem>
-              <SidebarMenuButton asChild>
-                <Link to={DashboardLink} className="flex items-center gap-1">
-                  <img src="/nilavu.png" alt="logo" width={35} height={35} />
-                  {state === "expanded" && <span>Nilavu</span>}
-                </Link>
-              </SidebarMenuButton>
+              <Link to={DashboardLink} className="flex items-center gap-2">
+                <img
+                  src="/logo.svg"
+                  alt="logo"
+                  className={cn("mix-blend-exclusion data:mix-blend-screen ease-in-out w-8 h-8")}
+                />
+                {state === "expanded" && <span>Nilavu</span>}
+              </Link>
             </SidebarMenuItem>
           </SidebarMenu>
           {/* Toggle Button */}
@@ -88,8 +90,8 @@ const AppSidebar = () => {
             <SidebarGroupLabel>{group.label}</SidebarGroupLabel>
             <SidebarGroupContent className="">
               <SidebarMenu>
-                {group.items.map((item) => (
-                  <Tooltip delayDuration={100}>
+                {group.items.map((item, key) => (
+                  <Tooltip delayDuration={100} key={key}>
                     <TooltipTrigger asChild>
                       <SidebarMenuItem key={item.title}>
                         <SidebarMenuButton asChild>
