@@ -9,6 +9,8 @@ import SignUP from "./pages/Auth/SignUP";
 import FindJobs from "./pages/talent/FindJobs";
 import AppliedJobs from "./pages/talent/AppliedJobs";
 import JobOffers from "./pages/talent/JobOffer";
+import BookmarkedJobs from "./pages/talent/BookmarkedJobs";
+import TalentProfile from "./pages/talent/Profile";
 
 const App = () => {
   return (
@@ -34,6 +36,11 @@ const App = () => {
               element={<AppliedJobs />}
             />
             <Route path={TALENT_ROUTES.JOB_OFFERS} element={<JobOffers />} />
+            <Route
+              path={TALENT_ROUTES.BOOKMARKED_JOBS}
+              element={<BookmarkedJobs />}
+            />
+            <Route path={TALENT_ROUTES.PROFILE} element={<TalentProfile />} />
           </Route>
         </Route>
       </Routes>
