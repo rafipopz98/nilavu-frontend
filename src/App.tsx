@@ -15,8 +15,8 @@ import { EMPLOYER_ROUTES } from "./lib/routes/EmployerRoutes";
 import EmployerDashboard from "./pages/employer/Dashboard";
 import Bonus from "./pages/talent/Bonus";
 import LeaveRequest from "./pages/talent/LeaveRequest";
-import Login from "./pages/auth/Login";
 import Register from "./pages/auth/Register";
+import Login from "./pages/auth/SignIn";
 
 const App = () => {
   return (
