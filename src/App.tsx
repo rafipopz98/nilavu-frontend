@@ -1,11 +1,9 @@
 import { Navigate, Route, Routes } from "react-router-dom";
 import PrivateRoute from "./layouts/PrivateAuth";
-import Login from "./pages/auth/Login";
 import TalentDashboard from "./pages/talent/dashboard";
 import { ROUTER } from "./lib/routes";
 import ProtectedLayout from "./layouts/ProtectedLayout";
 import { TALENT_ROUTES } from "./lib/routes/TalentRoutes";
-import SignUP from "./pages/auth/SignUP";
 import FindJobs from "./pages/talent/FindJobs";
 import AppliedJobs from "./pages/talent/AppliedJobs";
 import JobOffers from "./pages/talent/JobOffer";
@@ -17,6 +15,8 @@ import { EMPLOYER_ROUTES } from "./lib/routes/EmployerRoutes";
 import EmployerDashboard from "./pages/employer/Dashboard";
 import Bonus from "./pages/talent/Bonus";
 import LeaveRequest from "./pages/talent/LeaveRequest";
+import Login from "./pages/auth/Login";
+import Register from "./pages/auth/SignUP";
 
 const App = () => {
   return (
@@ -28,7 +28,7 @@ const App = () => {
           element={<Navigate to={ROUTER.AUTH.SIGN_IN} replace />}
         />
         <Route path={ROUTER.AUTH.SIGN_IN} element={<Login />} />
-        <Route path={ROUTER.AUTH.SIGN_UP} element={<SignUP />} />
+        <Route path={ROUTER.AUTH.SIGN_UP} element={<Register />} />
         {/* Protected routes */}
         <Route element={<PrivateRoute />}>
           <Route element={<ProtectedLayout />}>
