@@ -2,7 +2,7 @@ import { ChevronDownIcon, SearchCodeIcon } from "lucide-react";
 import { useState } from "react";
 
 type DropdownProps = {
-  label: string;
+  label?: string;
   options: { label: string; value: string; icon?: string }[];
   selectedOption: string;
   onChange: (value: string) => void;

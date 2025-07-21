@@ -1,16 +1,22 @@
 import { Navigate, Route, Routes } from "react-router-dom";
 import PrivateRoute from "./layouts/PrivateAuth";
-import Login from "./pages/Auth/Login";
+import Login from "./pages/auth/Login";
 import TalentDashboard from "./pages/talent/dashboard";
 import { ROUTER } from "./lib/routes";
 import ProtectedLayout from "./layouts/ProtectedLayout";
 import { TALENT_ROUTES } from "./lib/routes/TalentRoutes";
-import SignUP from "./pages/Auth/SignUP";
+import SignUP from "./pages/auth/SignUP";
 import FindJobs from "./pages/talent/FindJobs";
 import AppliedJobs from "./pages/talent/AppliedJobs";
 import JobOffers from "./pages/talent/JobOffer";
 import BookmarkedJobs from "./pages/talent/BookmarkedJobs";
 import TalentProfile from "./pages/talent/Profile";
+import TimeTracker from "./pages/talent/TimeTracker";
+import Invoice from "./pages/talent/Invoice";
+import { EMPLOYER_ROUTES } from "./lib/routes/EmployerRoutes";
+import EmployerDashboard from "./pages/employer/Dashboard";
+import Bonus from "./pages/talent/Bonus";
+import LeaveRequest from "./pages/talent/LeaveRequest";
 
 const App = () => {
   return (
@@ -41,6 +47,21 @@ const App = () => {
               element={<BookmarkedJobs />}
             />
             <Route path={TALENT_ROUTES.PROFILE} element={<TalentProfile />} />
+            <Route
+              path={TALENT_ROUTES.TIME_TRACKER}
+              element={<TimeTracker />}
+            />
+            <Route path={TALENT_ROUTES.INVOICE} element={<Invoice />} />
+            <Route path={TALENT_ROUTES.BONUS} element={<Bonus />} />
+            <Route
+              path={TALENT_ROUTES.LEAVE_REQUEST}
+              element={<LeaveRequest />}
+            />
+
+            <Route
+              path={EMPLOYER_ROUTES.DASHBOARD}
+              element={<EmployerDashboard />}
+            />
           </Route>
         </Route>
       </Routes>

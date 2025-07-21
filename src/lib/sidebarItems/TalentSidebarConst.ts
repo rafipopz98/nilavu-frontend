@@ -8,7 +8,7 @@ import {
   CalendarCheck,
   FileText,
   Wallet,
-  Banknote,
+  Calendar1,
 } from "lucide-react";
 import { TALENT_ROUTES } from "../routes/TalentRoutes";
 
@@ -57,8 +57,13 @@ export const TalentSidebar = [
         icon: UserCircle,
       },
       {
+        title: "Leave Request",
+        url: TALENT_ROUTES.LEAVE_REQUEST,
+        icon: Calendar1,
+      },
+      {
         title: "Attendance Tracker",
-        url: TALENT_ROUTES.ATTENDANCE_TRACKER,
+        url: TALENT_ROUTES.TIME_TRACKER,
         icon: CalendarCheck,
       },
       {
@@ -67,14 +72,9 @@ export const TalentSidebar = [
         icon: FileText,
       },
       {
-        title: "Expense",
-        url: TALENT_ROUTES.EXPENSE,
+        title: "Bonus",
+        url: TALENT_ROUTES.BONUS,
         icon: Wallet,
-      },
-      {
-        title: "Withdrawal Method",
-        url: TALENT_ROUTES.WITHDRAWAL_METHOD,
-        icon: Banknote,
       },
     ],
   },

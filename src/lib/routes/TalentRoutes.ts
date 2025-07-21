@@ -7,9 +7,9 @@ export const TALENT_ROUTES = {
   JOB_OFFERS: `${TALENT_MAIN_ROUTE}/job-offers`,
   BOOKMARKED_JOBS: `${TALENT_MAIN_ROUTE}/bookmarked-jobs`,
   PROFILE: `${TALENT_MAIN_ROUTE}/profile`,
-  ATTENDANCE_TRACKER: `${TALENT_MAIN_ROUTE}/attendance-tracker`,
+  TIME_TRACKER: `${TALENT_MAIN_ROUTE}/time-tracker`,
   INVOICE: `${TALENT_MAIN_ROUTE}/invoice`,
-  EXPENSE: `${TALENT_MAIN_ROUTE}/expense`,
-  WITHDRAWAL_METHOD: `${TALENT_MAIN_ROUTE}/withdrawal-method`,
+  BONUS: `${TALENT_MAIN_ROUTE}/bonus`,
+  LEAVE_REQUEST: `${TALENT_MAIN_ROUTE}/leave-request`,
   EMPLOYER_HISTORY: `${TALENT_MAIN_ROUTE}/employer-history`,
 };
