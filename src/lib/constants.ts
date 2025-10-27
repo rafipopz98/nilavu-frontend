@@ -1,4 +1,4 @@
-export const role: string = "talent";
+export const role: string = "employer";
 
 export const APPLIED_JOBS_STATUS_TYPE = [
   { label: "Pending", name: "Pending", value: "pending" },
