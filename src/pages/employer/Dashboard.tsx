@@ -1,6 +1,6 @@
-import CompanyInsight from "../../components/employer/CompanyInsights";
-import EmployerDashboardTodo from "../../components/employer/EmployerDashboardTodo";
-import PaymentInsight from "../../components/employer/PaymentInsight";
+import CompanyInsight from "../../components/employer/dashboard/CompanyInsights";
+import EmployerDashboardTodo from "../../components/employer/dashboard/EmployerDashboardTodo";
+import PaymentInsight from "../../components/employer/dashboard/PaymentInsight";
 
 const EmployerDashboard = () => {
   return (

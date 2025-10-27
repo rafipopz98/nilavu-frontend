@@ -3,10 +3,10 @@ import {
   dummyToDos,
   typeIcons,
   type DashboardToDoProps,
-} from "../../lib/types/talent/dashboard";
+} from "../../../lib/types/talent/dashboard";
 import { Link } from "react-router-dom";
 import { ChevronRight, ClipboardList, Info } from "lucide-react";
-import { Tooltip, TooltipContent } from "../ui/tooltip";
+import { Tooltip, TooltipContent } from "../../ui/tooltip";
 import moment from "moment";
 import QuickLinks from "./QuickLinks";
 
