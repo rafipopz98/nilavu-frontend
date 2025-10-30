@@ -18,6 +18,7 @@ import LeaveRequest from "./pages/talent/LeaveRequest";
 import Register from "./pages/auth/Register";
 import Login from "./pages/auth/SignIn";
 import AddSeatsPage from "./pages/employer/AddSeats";
+import PostJob from "./pages/employer/PostJob";
 
 const App = () => {
   return (
@@ -63,7 +64,11 @@ const App = () => {
               path={EMPLOYER_ROUTES.DASHBOARD}
               element={<EmployerDashboard />}
             />
-            <Route path={EMPLOYER_ROUTES.ADD_SEATS} element={<AddSeatsPage />} />
+            <Route
+              path={EMPLOYER_ROUTES.ADD_SEATS}
+              element={<AddSeatsPage />}
+            />
+            <Route path={EMPLOYER_ROUTES.POST_JOBS} element={<PostJob />} />
           </Route>
         </Route>
       </Routes>
